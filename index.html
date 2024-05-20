@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js"></script>
+</head>
+<body>
+    <div class="cor">
+        <input type="checkbox" onclick= "abrirMenu()" id="checkbox-menu" class="checkbox-menu  abertobo" >
+            <label class="menu-lines" for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </div>
+    <aside id="sidebar" class="sidebar barfechar">
+        <div>
+            <img src="img/quadrado-b.png" id="logo"></i>
+            <h1 class="name">Beatriz Lima</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="itens-menu">
+                        <i class="fi fi-rr-home"></i>
+                        <a href="#home" class="abas" id="texto">Home</a>
+                    </li>
+                    <li class="itens-menu">
+                        <i class="fi fi-rr-portrait"></i>
+                        <a href="#sobre" class="abas" id="texto">Sobre</a>
+                    </li>
+                    <li class="itens-menu">
+                        <i class="fi fi-rr-graduation-cap"></i>
+                        <a href="#projetos" class="abas" id="texto">Projetos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/Bialima0918/" class="icones-redes"><i
+                    class="fi fi-brands-instagram"></i></a>
+            <a href="https://github.com/Bialima16" class="icones-redes"><i class="fi fi-brands-github"></i></a>
+            <a href="https://www.linkedin.com/in/beatriz-lima-69b41b2a4/" class="icones-redes"><i
+                    class="fi fi-brands-linkedin"></i></a>
+        </div>
+    </aside>
+
+    
+
+
+    <section id="conteudo">
+        <div id="home">
+            <h1 class="titulo-pag">Home</h1>
+            <h1 class="frase-inicial">Seja Bem-vindo ao meu <p class="destaque">Portifólio</p>
+            </h1>
+        </div>
+
+        <div id="sobre">
+            <h1 class="titulo-pag">Sobre</h1>
+            <div class="elementos-sobre">
+            <img src="img/eu.jpeg" class="imagem-pessoal">
+            <span class="sobre-pessoal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit architecto temporibus ratione laboriosam
+                beatae rem voluptatibus aut quas iste neque, soluta rerum ipsa placeat vero dicta, vel tempore deleniti
+                molestias!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit architecto temporibus ratione laboriosam
+                    beatae rem voluptatibus aut quas iste neque, soluta rerum ipsa placeat vero dicta, vel tempore deleniti
+                    molestias!</span>
+                </div>
+        </div>
+
+        <div id="projetos">
+            <h1 class="titulo-pag">Projetos</h1>
+            <div id="coluna">
+                <div class="card">
+                    <img src="proj.png" class="projetos">
+                    <h1>titulo</h1>
+                    <span>feito cpm php e banco de dados </span>
+                    <button>Código</button><button>Visualizar</button>
+                </div>
+                <div class="card">
+                    <img src="proj.png" class="projetos">
+                    <h1>titulo</h1>
+                    <span>feito cpm php e banco de dados </span>
+                    <button>Código</button><button>Visualizar</button>
+                </div>
+            </div>
+            <div id="coluna">
+            <div class="card">
+                <img src="proj.png" class="projetos">
+                <h1>titulo</h1>
+                <span>feito cpm php e banco de dados </span>
+                <button>Código</button><button>Visualizar</button>
+            </div>
+            <div class="card">
+                <img src="proj.png" class="projetos">
+                <h1>titulo</h1>
+                <span>feito cpm php e banco de dados </span>
+                <button>Código</button><button>Visualizar</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

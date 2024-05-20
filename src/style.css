@@ -1,0 +1,401 @@
+*{
+     margin: 0px;
+     padding: 0px;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ /* Seção do menu lateral */
+ #sidebar{
+     position: fixed;
+     width: 15%;
+     float: left;
+     height: 100%;
+     background-color: #161616;
+     box-shadow: 0 .5rem 1rem rgb(119, 10, 119); 
+     visibility: visible;
+ }
+ #logo{
+     margin-left: 90px;
+     color: rgb(255, 255, 255);
+     padding-top: 20px;
+     width: 30px;
+ }
+ .menu{
+     margin-top: 70px;
+ }
+ .name{
+     font-size: 25px;
+     color: white;
+     text-align: center;
+     margin-top: 20px;
+ }
+ .itens-menu{
+     color: white;
+     background-color: rgba(0, 0, 0, 0.212);
+     border-radius: 10px;
+     width: auto;
+     height: 40px;
+     padding-left: 50px;
+     padding-top: 20px;
+     margin-top: 20px;
+     transition: 0.5s;
+     cursor: pointer;
+     list-style: none;
+ }
+ .itens-menu:hover{
+     background-color: rgb(59, 59, 59);
+ }
+ .itens-menu::selection{
+     background-color: rgb(75, 10, 75);
+ }
+ .abas{
+      margin-left: 10px;
+      text-decoration: none;
+      color: white;
+      padding-top: 50px;
+ }
+ .icones-redes{
+     text-decoration: none;
+     color: white;
+     justify-content: space-between;
+     margin-right: 20px;
+     background-color: rgba(0, 0, 0, 0.212);
+     width: 35px;
+     height: 35px; 
+     padding-top: 20px;
+     padding-left: 15px;
+     border-radius: 15px;
+     transition: 0.5s;
+ }  
+ .icones-redes:hover{
+     background-color: rgb(75, 10, 75);
+ }  
+ .redes{
+     justify-content: center;
+     display: flex;
+     margin-top: 90px; 
+     margin-left: 10px;
+ }
+ /* Seção ao lado, que contem todo o conteúdo */
+ #conteudo{
+     width: 85%;
+     float: right;
+     height: 100%;
+     color: rgb(0, 0, 0);
+     background-color: #000000;
+     border-left: none;
+ }
+ .titulo-pag{
+     text-align: center;
+     color: white;
+     padding-top: 20px;
+     font-size: 40px;
+     text-decoration: underline 5px rgb(75, 10, 75);
+ }
+ #home{
+     height: 100vh;
+     border-bottom: 2px solid rgb(75, 10, 75);
+ }
+ #sobre{
+     height: 100vh;
+     border-bottom: 2px solid rgb(75, 10, 75);
+ }
+ .elementos-sobre{
+     display: flex;
+     align-items: center;
+ }
+ #projetos{
+     height: 100vh;
+     border-bottom: 2px solid rgb(75, 10, 75);
+ }
+ #coluna{
+      display: flex;
+ }
+ .frase-inicial{
+     text-align: center;
+     position: center;
+     color: white;
+     display: block;
+     padding-top: 250px;
+ }
+ .imagem-pessoal{
+     width: 320px;
+     margin-top: 90px;
+     margin-left: 90px;
+     border-radius: 1000px;
+     display: flex;
+     margin-bottom: 100px;
+ }
+ .sobre-pessoal{
+     color: white;
+     text-align: justify;
+     border: 2px solid rgb(75, 10, 75);
+     margin-left: 40px;
+     margin-right: 40px;
+     font-size: 20px;
+     padding: 15px;
+     border-radius: 0px 20px 0px 20px;
+ }
+ .card {
+     background-color: #aaaa;
+     width: 300px;
+     height: 250px;
+     border-radius: 0px 10px 0px 10px;
+     box-shadow: 4px 4px 12px rgb(75, 10, 75);
+     margin-top: 10px;
+     margin-bottom: 20px;
+     margin-left: 180px;
+ 
+   }
+  .card img {
+     width: 100%;
+     height: 130px;
+     border-top-right-radius: 12px;
+   }
+   .card div {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 4px;
+     height: 50%;
+   }
+   .card h1 {
+     font-size:20px;
+     text-align: center;
+   }
+   .card span{
+     margin-left: 5px;
+   }
+   
+   .card button {
+     background-color: rgb(75, 10, 75);
+     height: 30px;
+     border: none;
+     padding: 4px;
+     margin-top: 30px;
+     margin-left: 13px;
+     width: 130px;
+     color: #fff;
+     font-size: 15px;
+     font-weight: bold;
+     border-radius: 4px;
+     transition: 0.8s;
+   }
+   .card button:hover {
+     background-color: white;
+     color: rgb(75, 10, 75);
+     cursor: pointer;
+   }
+ #checkbox-menu{
+     position: absolute;
+     opacity: 0;
+ }
+ 
+ label{
+     cursor: pointer;
+     position: relative;
+     display: block;
+     height: 22px;
+     width: 30px;
+     visibility: hidden;
+ }
+ label span{
+     position: absolute;
+     display: block;
+     height: 5px;
+     width: 100%;
+     border-radius: 30px;
+     background-color: #000;
+     transition: 0.5s ease-in-out;
+ }
+ label span:nth-child(1){
+     top: 0;
+ }
+ label span:nth-child(2){
+     top: 8px;
+ }
+ label span:nth-child(3){
+     top: 16px;
+ }
+ #checkbox-menu:checked + label span:nth-child(1){
+     transform: rotate(-45deg);
+     top: 8px;
+ }
+ #checkbox-menu:checked + label span:nth-child(2){
+     opacity: 0;
+ }
+ #checkbox-menu:checked + label span:nth-child(3){
+     transform: rotate(45deg);
+     top: 8px;
+ }
+ #sidebar.close-sidebar{
+     min-width: 0;
+ }
+ .cor{
+     background-color: #161616;
+     width: 100%;
+     position: fixed;
+ }
+ 
+ @media screen and (max-width: 1200px){
+     .cor{
+         background-color: #161616;
+         width: 20px;
+         z-index: 1;
+         position: fixed;
+     }
+     .barfechar{
+         opacity: 0;
+         transition: 0.5s;
+     }
+     .menuabe{
+         position: fixed;
+         width: 220px;
+         float: left;
+         height: 100%;
+         background-color: #ffffff;
+         box-shadow: 0 .5rem 1rem rgb(119, 10, 119);
+         opacity: 10;
+         transition: 0.5s;
+      
+     }
+     #sidebar{
+          width: 220px;
+     }
+     .menu-lines span{
+         visibility: visible;
+         color: rgb(255, 255, 255);
+         background-color: #ffffff;
+         margin: 5px;
+     }
+     .checkbox-menu{
+         background-color: #000;
+     }
+     #conteudo{
+         width: 100%;
+         height: 100%;
+         z-index: 2;
+     }
+     .menu-lines{
+         background-color: rgb(255, 255, 255);
+     }
+     #sobre{
+         height: 100vh;
+         border-bottom: 2px solid rgb(75, 10, 75);
+         flex-direction: column;
+     }
+     #projetos{
+          height: 150vh;
+      }
+     .imagem-pessoal{
+         width: 200px;
+         margin-top: 20px;
+         margin-left: 20px;
+         border-radius: 1000px;
+         margin-bottom: 10px;
+         flex-direction: column;
+     }
+     .elementos-sobre{
+         flex-direction: column;
+     }
+     .sobre-pessoal{
+         color: white;
+         text-align: justify;
+         border: 2px solid rgb(75, 10, 75);
+         margin-left: 20px;
+         margin-right: 20px;
+         font-size: 18px;
+         padding: 15px;
+         border-radius: 0px 20px 0px 20px;
+         
+     }
+     .card {
+         background-color: #aaaa;
+         width: 250px;
+         height: 250px;
+         border-radius: 0px 10px 0px 10px;
+         box-shadow: 4px 4px 12px rgb(75, 10, 75);
+         margin-top: 30px;
+         margin-bottom: 10px;
+         margin-left: 110px;
+         flex-direction: column;
+         justify-content: center;
+       }
+      .card img {
+         width: 100%;
+         height: 130px;
+         border-top-right-radius: 12px;
+       }
+       .card div {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 4px;
+         height: 50%;
+         flex-direction: column;
+       }
+       .card h1 {
+         font-size:20px;
+         text-align: center;
+       }
+       .card span{
+         margin-left: 5px;
+       }
+       
+       .card button {
+         background-color: rgb(75, 10, 75);
+         height: 30px;
+         border: none;
+         padding: 4px;
+         margin-top: 40px;
+         margin-left: 15px;
+         width: 100px;
+         color: #fff;
+         font-size: 15px;
+         font-weight: bold;
+         border-radius: 4px;
+         transition: 0.8s;
+       }
+       .card button:hover {
+         background-color: white;
+         color: rgb(75, 10, 75);
+         cursor: pointer;
+       }
+       #coluna{
+         flex-direction: column;
+       }
+       .container{
+         opacity: 0;
+       }
+ }
+     /*#flex{
+         display: flex;
+     }
+     #sidebar{
+         display: none;
+     }
+     #outro{
+         width: auto;
+         
+     }
+     .eu{
+         margin-top: 100px;
+         width: 200px;
+         height: 300px;
+     }
+     .sobre{
+         margin-bottom: 30px;
+         font-size: 15px;
+     }
+     .container .box{
+         width: 550px;
+         height: 500px;
+         margin-left: -20px;
+     }
+     .u{
+         margin-right: 30px;
+     }
+ }
