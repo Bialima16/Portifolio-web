@@ -366,10 +366,15 @@
        }
        #coluna{
          flex-direction: column;
-       }
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        }
        .container{
          opacity: 0;
-       }
+       
+        }
+       
  }
      /*#flex{
          display: flex;
